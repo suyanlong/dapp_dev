@@ -1,0 +1,57 @@
+
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>web3 test</title>
+	<style type="text/css">
+		body{font-size: 14px;}
+		.content{
+			width: 800px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>web3 test</h1>
+
+
+	<script>
+
+        window.addEventListener('load', function() {
+            // Check if Web3 has been injected by the browser:
+            if (typeof web3 !== 'undefined') {
+//                web3 = new Web3(web3.currentProvider);
+//            } else {
+//                 set the provider you want from Web3.providers
+				console.log(web3);
+//                web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+            }
+			if(web3.isConnected()){
+			    alert("connect.....");
+			    console.log( web3.currentProvider);
+//                if(!web3.currentProvider)
+//                    web3.setProvider(new web3.providers.HttpProvider("http://localhost:8540"));
+			}else{
+                alert("not connect.....");
+
+			}
+//			web3.
+            web3.eth.getBlock(48, function(error, result){
+                if(!error)
+//                    console.log(result);
+                alert(result);
+                else
+                    console.error(error);
+                alert(error);
+            });
+
+			console.log(web3.version.network);
+
+        });
+
+
+	</script>
+
+</body>
+</html>

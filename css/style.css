@@ -180,7 +180,7 @@ a.navbt span {
 }
 
 .prosul li, .prosul i {
-    background: url(../images/iconcatg.png) no-repeat;
+    /*background: url(../images/iconcatg.png) no-repeat;*/
 }
 
 li.food {
@@ -233,7 +233,7 @@ li.goods {
 }
 
 .prosul a.hot {
-    background: url(../images/icon-hot.png) right 8px no-repeat
+    /*background: url(../images/icon-hot.png) right 8px no-repeat*/
 }
 
 .prosul li.prosahover a.hot {

@@ -32,8 +32,13 @@
 .primer-info{
     position: relative;
     height: 25px;
-    margin: auto auto;
+    margin: 20px auto;
     text-align: center;
+    font-size: 28px;
+}
+.primer-info label{
+    margin-top: 10px;
+    font-size: 20px;
 }
 /*.primer-info span{*/
     /*position: relative;*/
@@ -70,7 +75,7 @@
 
 .form-info .commitInfo{
     position: relative;
-    left: 400px;
+    left: 300px;
     text-align: center;
     width: 55px;
     height: 28px;
